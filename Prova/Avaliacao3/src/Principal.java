@@ -10,9 +10,8 @@ public class Principal {
     public static void main(String[] args) {
         double lado = Double.parseDouble(JOptionPane.showInputDialog("Informe o lado do quadrado: "));
         Quadrado quadrado = new Quadrado(lado);
-        JOptionPane.showMessageDialog(null, "Área do quadrado: " + quadrado.calculaArea());
-        lado = Double.parseDouble(JOptionPane.showInputDialog("Informe o lado do cubo: "));
         Cubo cubo = new Cubo(lado);
+        JOptionPane.showMessageDialog(null, "Área do quadrado: " + quadrado.calculaArea());
         JOptionPane.showMessageDialog(null, "Volume do cubo: " + cubo.calculaVolume());
     }
     
